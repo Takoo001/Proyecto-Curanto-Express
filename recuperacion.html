@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Recuperar Contraseña</h2>
+    <p>Ingresa tu correo o nombre de usuario y te enviaremos instrucciones para restablecer tu contraseña.</p>
+
+    <input type="text" id="recoveryInput" placeholder="Correo o usuario">
+    <button id="sendRecovery">Enviar</button>
+
+    <p id="recovery-message" style="color: green; margin-top: 10px;"></p>
+    <p class="forgot-password"><a href="./index.html">← Volver al inicio</a></p>
+  </div>
+
+  <script>
+    document.getElementById("sendRecovery").addEventListener("click", () => {
+      const input = document.getElementById("recoveryInput").value;
+      const message = document.getElementById("recovery-message");
+
+      if (input.trim() === "") {
+        message.style.color = "red";
+        message.textContent = "Por favor ingresa un dato válido.";
+      } else {
+        message.style.color = "green";
+        message.textContent = "Se han enviado las instrucciones a tu correo (simulado).";
+      }
+    });
+  </script>
+</body>
+</html>

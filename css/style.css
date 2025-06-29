@@ -1,0 +1,79 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(90deg, rgb(202, 10, 202), rgb(115, 199, 233));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container, .loading-screen {
+  background: linear-gradient(90deg, rgb(202, 10, 202), rgb(115, 199, 233)); 
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  box-sizing: border-box; /* Asegura que el padding no desborde */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #02199c;
+  color: white;
+}
+
+button.secondary {
+  background-color: #2abdf7;
+  color: #fafafa;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#error-message {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.loading-screen img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.forgot-password a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}

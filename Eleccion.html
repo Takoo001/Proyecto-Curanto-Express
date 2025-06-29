@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elección</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>¿Qué transporte deseas?</h2>
+
+    <button id="btnTerrestre">Terrestre</button>
+    <button id="btnMaritimo" class="secondary">Marítimo</button>
+  </div>
+
+  <script>
+    document.getElementById("btnTerrestre").addEventListener("click", () => {
+      alert("Has elegido transporte terrestre.");
+      // window.location.href = "terrestre.html"; // Descomenta si necesitas redirigir
+    });
+
+    document.getElementById("btnMaritimo").addEventListener("click", () => {
+      alert("Has elegido transporte marítimo.");
+      // window.location.href = "maritimo.html"; // Descomenta si necesitas redirigir
+    });
+  </script>
+</body>
+</html>
