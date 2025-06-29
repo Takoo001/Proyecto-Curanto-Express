@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crea una cuenta</title>
+  <title>Iniciar Sesión</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <div class="login-container">
-    <h2>Crea una cuenta</h2>
+    <h2>Iniciar Sesión</h2>
 
     <!-- Logo centrado justo debajo del título -->
     <img src="assets/images/logo_curanto_sin_fondo.png" alt="Logo Curanto" class="logo" />
@@ -24,18 +24,18 @@
       </button>
     </div>
 
-    <button id="createAccountButton">Crear Cuenta</button>
+    <button id="loginButton">Ingresar</button>
     <button id="skipButton" class="secondary">Omitir</button>
-
     <p class="forgot-password"><a href="recuperacion.html" id="forgotPasswordLink">¿Olvidaste tu contraseña?</a></p>
-
-    <p class="forgot-password">
-      ¿Ya tiene cuenta? <a href="./iniciar.html">Inicia sesión</a>
-    </p>
-
     <p id="error-message"></p>
   </div>
 
-  <script src="js/createAccount.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById("togglePassword").addEventListener("click", () => {
+      const passwordInput = document.getElementById("password");
+      passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+    });
+  </script>
 </body>
 </html>
