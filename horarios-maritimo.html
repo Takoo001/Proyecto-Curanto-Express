@@ -1,95 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horarios Marítimo</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    body {
-      background-image: linear-gradient(90deg, rgb(202, 10, 202), rgb(115, 199, 233));
-      color: #000;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 1rem;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    h1, h2 {
-      text-align: center;
-      margin-bottom: 0.5rem;
-    }
-
-    h2 {
-      text-align: left;
-      margin-top: 1.5rem;
-      color: #000;
-    }
-
-    .section-title {
-      font-weight: bold;
-      margin-top: 1rem;
-      color: #000;
-      text-align: center;
-    }
-
-    .horario-header {
-      font-size: 0.9rem;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 0.2rem;
-      color: #000;
-    }
-
-    .horario-linea {
-      display: flex;
-      justify-content: space-between;
-      padding: 6px 10px;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      margin: 4px 0;
-      font-size: 0.95rem;
-    }
-
-    @media screen and (max-width: 480px) {
-      .horario-linea {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marítimo</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <div class="container">
-    <h1>Marítimo</h1>
-    <h2>Castro</h2>
-    <p class="section-title">Recorridos</p>
+<body class="horarios-page">
+  <div class="horario-container">
+    <h2 class="titulo-principal">Marítimo</h2>
+    <h3 class="subtitulo">Castro</h3>
+    <h4 class="recorridos">Recorridos</h4>
 
-    <p class="section-title">Horario de invierno</p>
-    <div class="horario-header">Hora de salida - Hora de llegada</div>
-    <div class="horario-linea"><span>Quehui - Castro</span><span>07:10 - 09:20</span></div>
-    <div class="horario-linea"><span>Chelín - Castro</span><span>07:10 - 09:20</span></div>
-    <div class="horario-linea"><span>Castro - Quehui</span><span>15:30 - 17:30</span></div>
-    <div class="horario-linea"><span>Castro - Chelín</span><span>15:30 - 17:30</span></div>
+    <div class="seccion-horarios">
+      <h4>Horario de invierno</h4>
+      <p class="etiqueta">Hora de salida - Hora de llegada</p>
+      <div class="grupo">
+        <p>Quehui - Castro: <span>07:10 - 09:20</span></p>
+        <p>Chelín - Castro: <span>07:10 - 09:20</span></p>
+        <p>Castro - Quehui: <span>15:30 - 17:30</span></p>
+        <p>Castro - Chelín: <span>15:30 - 17:30</span></p>
+      </div>
+    </div>
 
-    <p class="section-title">Horario de verano</p>
-    <div class="horario-header">Hora de salida - Hora de llegada</div>
-    <div class="horario-linea"><span>Quehui - Castro</span><span>07:10 - 09:20</span></div>
-    <div class="horario-linea"><span>Chelín - Castro</span><span>07:10 - 09:20</span></div>
-    <div class="horario-linea"><span>Castro - Quehui</span><span>16:00 - 18:00</span></div>
-    <div class="horario-linea"><span>Castro - Chelín</span><span>16:00 - 18:00</span></div>
+    <div class="seccion-horarios">
+      <h4>Horario de verano</h4>
+      <p class="etiqueta">Hora de salida - Hora de llegada</p>
+      <div class="grupo">
+        <p>Quehui - Castro: <span>07:10 - 09:20</span></p>
+        <p>Chelín - Castro: <span>07:10 - 09:20</span></p>
+        <p>Castro - Quehui: <span>16:00 - 18:00</span></p>
+        <p>Castro - Chelín: <span>16:00 - 18:00</span></p>
+      </div>
+    </div>
 
-    <p class="section-title">Horario días feriados</p>
-    <div class="horario-header">Hora de salida - Hora de llegada</div>
-    <div class="horario-linea"><span>Quehui - Castro</span><span>13:00 - 15:00</span></div>
-    <div class="horario-linea"><span>Chelín - Castro</span><span>13:00 - 15:00</span></div>
-    <div class="horario-linea"><span>Castro - Quehui</span><span>16:00 - 18:00</span></div>
-    <div class="horario-linea"><span>Castro - Chelín</span><span>16:00 - 18:00</span></div>
+    <div class="seccion-horarios">
+      <h4>Horario días feriados</h4>
+      <p class="etiqueta">Hora de salida - Hora de llegada</p>
+      <div class="grupo">
+        <p>Quehui - Castro: <span>13:00 - 15:00</span></p>
+        <p>Chelín - Castro: <span>13:00 - 15:00</span></p>
+        <p>Castro - Quehui: <span>16:00 - 18:00</span></p>
+        <p>Castro - Chelín: <span>16:00 - 18:00</span></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
+
 

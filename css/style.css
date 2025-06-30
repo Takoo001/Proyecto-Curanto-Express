@@ -118,3 +118,65 @@ button:hover {
   position: relative;
   left: -10px; 
 }
+
+.horarios-page {
+  overflow-y: auto;
+  height: auto;
+}
+
+.horario-container {
+  background: linear-gradient(90deg, rgb(202, 10, 202), rgb(115, 199, 233));
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  color: black;
+  text-align: left;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  margin: 0;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.recorridos {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.seccion-horarios {
+  margin-bottom: 1.5rem;
+}
+
+.seccion-horarios h4 {
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.etiqueta {
+  font-size: 0.9rem;
+  color: #000;
+  margin-bottom: 0.4rem;
+}
+
+.grupo p {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #000;
+}
+
+.grupo span {
+  font-weight: bold;
+}
