@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cargando...</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="loading-screen">
+    <img src="assets/images/logo_curanto_sin_fondo.png" alt="Logo" />
+    <h2 id="tituloTransporte">Cargando...</h2>
+  </div>
+
+  <script>
+    const titulo = localStorage.getItem("transporteElegido") || "Cargando...";
+    const destino = localStorage.getItem("destinoFinal") || "index.html";
+
+    document.getElementById("tituloTransporte").textContent = titulo;
+
+    setTimeout(() => {
+      window.location.href = destino;
+    }, 3000);
+  </script>
+</body>
+</html>

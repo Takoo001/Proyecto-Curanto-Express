@@ -17,12 +17,16 @@
   <script>
     document.getElementById("btnTerrestre").addEventListener("click", () => {
       alert("Has elegido transporte terrestre.");
-      // window.location.href = "terrestre.html"; // Descomenta si necesitas redirigir
+      // Puedes asignar otro destino si deseas usar loading para terrestre también
+      // localStorage.setItem("transporteElegido", "Transporte Terrestre");
+      // localStorage.setItem("destinoFinal", "terrestre.html");
+      // window.location.href = "elegido.html";
     });
 
     document.getElementById("btnMaritimo").addEventListener("click", () => {
-      alert("Has elegido transporte marítimo.");
-      // window.location.href = "maritimo.html"; // Descomenta si necesitas redirigir
+      localStorage.setItem("transporteElegido", "Transporte Marítimo");
+      localStorage.setItem("destinoFinal", "horarios-maritimo.html");
+      window.location.href = "elegido.html";
     });
   </script>
 </body>
