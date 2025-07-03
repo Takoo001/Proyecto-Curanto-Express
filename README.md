@@ -24,18 +24,18 @@
 ---
 
 ## 📁 Estructura del proyecto
-Proyecto-Curanto-Express/assets/images/ # Logos y gifs
-Proyecto-Curanto-Express/css/style.css # Estilos y diseño responsive
-Proyecto-Curanto-Express/js/app.js # Logica de inicio de sesion
-Proyecto-Curanto-Express/js/createAccount.js/ # Logica de crear cuenta
-Proyecto-Curanto-Express/Eleccion.html # Página para elegir tipo de transporte
-Proyecto-Curanto-Express/crear_cuenta.html # Página para registrar una nueva cuenta
-Proyecto-Curanto-Express/elegido.html # Página de carga intermedia al seleccionar transporte
-Proyecto-Curanto-Express/horarios-maritimo.html # Horarios detallados de transporte marítimo
-Proyecto-Curanto-Express/index.html # Página principal de inicio
-Proyecto-Curanto-Express/loading.html # Pantalla de carga
-Proyecto-Curanto-Express/recuperacion.html # Recuperación de contraseña
-Proyecto-Curanto-Express/README.md # Este archivo
+- Proyecto-Curanto-Express/assets/images/ # Logos y gifs
+- Proyecto-Curanto-Express/css/style.css # Estilos y diseño responsive
+- Proyecto-Curanto-Express/js/app.js # Logica de inicio de sesion
+- Proyecto-Curanto-Express/js/createAccount.js/ # Logica de crear cuenta
+- Proyecto-Curanto-Express/Eleccion.html # Página para elegir tipo de transporte
+- Proyecto-Curanto-Express/crear_cuenta.html # Página para registrar una nueva cuenta
+- Proyecto-Curanto-Express/elegido.html # Página de carga intermedia al seleccionar transporte
+- Proyecto-Curanto-Express/horarios-maritimo.html # Horarios detallados de transporte marítimo
+- Proyecto-Curanto-Express/index.html # Página principal de inicio
+- Proyecto-Curanto-Express/loading.html # Pantalla de carga
+- Proyecto-Curanto-Express/recuperacion.html # Recuperación de contraseña
+- Proyecto-Curanto-Express/README.md # Este archivo
 
 ---
 
