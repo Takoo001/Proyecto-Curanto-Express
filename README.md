@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/Chiloe_archipielago.jpg" alt="Chiloe archipielago" width="200"/>
+  <img src="assets/images/Chiloe_archipielago.jpg" alt="Chiloé Archipiélago" style="width: 100%; max-width: 800px;" />
 </p>
 
 # 🛳️ Curanto Express
@@ -24,26 +24,18 @@
 ---
 
 ## 📁 Estructura del proyecto
-Proyecto-Curanto-Express/
-│
-├── assets/
-│ └── images/ # Logos y gifs
-│
-├── css/
-│ └── style.css # Estilos y diseño responsive
-│
-├── js/
-│ ├── app.js # Lógica de inicio de sesión
-│ └── createAccount.js # Lógica de crear cuenta
-│
-├── Eleccion.html # Página para elegir tipo de transporte
-├── crear_cuenta.html # Página para registrar una nueva cuenta
-├── elegido.html # Página de carga intermedia al seleccionar transporte
-├── horarios-maritimo.html # Horarios detallados de transporte marítimo
-├── index.html # Página principal de inicio
-├── loading.html # Pantalla de carga
-├── recuperacion.html # Recuperación de contraseña
-└── README.md # Este archivo
+Proyecto-Curanto-Express/assets/images/ # Logos y gifs
+Proyecto-Curanto-Express/css/style.css # Estilos y diseño responsive
+Proyecto-Curanto-Express/js/app.js # Logica de inicio de sesion
+Proyecto-Curanto-Express/js/createAccount.js/ # Logica de crear cuenta
+Proyecto-Curanto-Express/Eleccion.html # Página para elegir tipo de transporte
+Proyecto-Curanto-Express/crear_cuenta.html # Página para registrar una nueva cuenta
+Proyecto-Curanto-Express/elegido.html # Página de carga intermedia al seleccionar transporte
+Proyecto-Curanto-Express/horarios-maritimo.html # Horarios detallados de transporte marítimo
+Proyecto-Curanto-Express/index.html # Página principal de inicio
+Proyecto-Curanto-Express/loading.html # Pantalla de carga
+Proyecto-Curanto-Express/recuperacion.html # Recuperación de contraseña
+Proyecto-Curanto-Express/README.md # Este archivo
 
 ---
 
@@ -53,6 +45,6 @@ Proyecto-Curanto-Express/
 - **CSS** (incluye animaciones y diseño responsivo)
 - **JavaScript** (navegación básica, validaciones)
 - **Git + Github** (control de versiones y despliegue)
-- **Netlify** (Despliegue en linea 24 horas)
+- **Netlify** (Despliegue en linea 24/7)
   
 ---
