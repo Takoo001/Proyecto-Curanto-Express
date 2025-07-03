@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/Chiloe_archipielago.png" alt="Chiloé Archipielago" style="width: 70%; max-width: 800px;" />
+  <img src="assets/images/Chiloe_archipielago.png" alt="Chiloé Archipielago" style="width: 100%; max-width: 800px;" />
 </p>
 
 # 🛳️ Curanto Express
