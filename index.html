@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crea una cuenta</title>
+  <title>Iniciar Sesion</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="inicio-google">
   <div class="google-container">
     
-    <!-- Lado izquierdo con imagen -->
+
     <div class="google-left">
       <img src="assets/images/logo_curanto_sin_fondo.png" alt="Imagen de marca">
     </div>
 
-    <!-- Lado derecho con formulario -->
-    <div class="google-right">
-      <h2>Crea tu cuenta</h2>
-      <p>Usa tu correo o nombre de usuario</p>
 
-      <input type="text" id="username" placeholder="Correo o usuario" />
+    <div class="google-right">
+      <h2>Iniciar Sesión</h2>
+      <p>Usa tu correo electronico</p>
+
+      <input type="text" id="username" placeholder="Correo" />
 
       <div class="password-wrapper">
         <input type="password" id="password" placeholder="Contraseña" />
@@ -33,8 +33,11 @@
       <button id="createAccountButton">Crear Cuenta</button>
       <button id="skipButton" class="secondary">Omitir</button>
 
+       <p class="forgot-password">
+        <a href="recuperacion.html">¿Olvidaste tu contraseña?</a>
+      </p>
       <p class="forgot-password">
-        ¿Ya tienes cuenta? <a href="./iniciar.html">Iniciar sesión</a>
+        ¿No tienes cuenta? <a href="./crear_cuenta.html">Registrate</a>
       </p>
 
       <p id="error-message"></p>
