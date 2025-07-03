@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="2;url=Eleccion.html">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="2;url=Eleccion.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cargando...</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f0f8ff;
+    body.inicio-google {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: Arial, sans-serif;
+      background: linear-gradient(90deg, rgb(202, 10, 202), rgb(115, 199, 233));
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+      animation: fadeIn 1s ease-out;
     }
 
-    .loading-screen {
+    .loading-card {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 30px 40px;
+      width: 320px;
+      max-width: 90vw;
       text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      color: white;
+      animation: zoomIn 0.6s ease-out;
     }
 
-    .loading-screen img {
-      max-width: 200px;
-      display: block;
-      margin: 10px auto;
+    .loading-card img.logo {
+      width: 120px;
+      margin-bottom: 25px;
+      animation: bounce 2s infinite;
     }
 
-    .loading-screen p {
-      font-size: 18px;
-      color: #333;
+    .loading-card img.loading-gif {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 25px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      opacity: 0.9;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
+      margin: 0;
     }
   </style>
 </head>
-<body>
-  <div class="loading-screen">
-    <img src="assets/images/logo_curanto_sin_fondo.png" alt="Logo Cargando" />
-    <img src="assets/images/YlWC.gif" alt="Cargando..." />
+<body class="inicio-google">
+  <div class="loading-card">
+    <img src="assets/images/logo_curanto_sin_fondo.png" alt="Logo Curanto" class="logo" />
+    <img src="assets/images/YlWC.gif" alt="Cargando..." class="loading-gif" />
     <p>Cargando, por favor espera...</p>
   </div>
 </body>

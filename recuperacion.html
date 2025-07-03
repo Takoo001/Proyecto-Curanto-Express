@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recuperar Contraseña</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <div class="login-container">
-    <h2>Recuperar Contraseña</h2>
-    <p>Ingresa tu correo o nombre de usuario y te enviaremos instrucciones para restablecer tu contraseña.</p>
+<body class="inicio-google">
+  <div class="google-container">
 
-    <input type="text" id="recoveryInput" placeholder="Correo o usuario">
-    <button id="sendRecovery">Enviar</button>
+    <!-- Lado izquierdo con imagen -->
+    <div class="google-left">
+      <img src="assets/images/logo_curanto_sin_fondo.png" alt="Logo Curanto" />
+    </div>
 
-    <p id="recovery-message" style="color: green; margin-top: 10px;"></p>
-    <p class="forgot-password"><a href="./index.html">← Volver al inicio</a></p>
+    <!-- Lado derecho con formulario -->
+    <div class="google-right">
+      <h2>Recuperar Contraseña</h2>
+      <p>Ingresa tu correo o nombre de usuario y te enviaremos instrucciones para restablecer tu contraseña.</p>
+
+      <input type="text" id="recoveryInput" placeholder="Correo o usuario" />
+      <button id="sendRecovery">Enviar</button>
+
+      <p id="recovery-message" style="margin-top: 10px;"></p>
+
+      <p class="forgot-password">
+        <a href="./index.html">← Volver al inicio</a>
+      </p>
+    </div>
   </div>
 
   <script>

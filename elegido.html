@@ -2,21 +2,132 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cargando...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cargando Transporte...</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body.inicio-google {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(90deg, rgb(202, 10, 202), rgb(115, 199, 233));
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .loading-card {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 30px 40px;
+      width: 320px;
+      max-width: 90vw;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      color: white;
+      animation: zoomIn 0.7s ease forwards;
+    }
+
+    .loading-card img {
+      width: 120px;
+      margin-bottom: 25px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    h2#tituloTransporte {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+      min-height: 40px;
+    }
+
+    .subtitulo {
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: 0.85;
+      margin-bottom: 25px;
+    }
+
+    /* Animación tipo máquina de escribir para el título */
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blinkCaret {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #fff; }
+    }
+
+    #tituloTransporte {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid white;
+      width: 0;
+      animation:
+        typing 2.5s steps(30, end) forwards,
+        blinkCaret 0.75s step-end infinite;
+      margin: 0 auto 8px;
+    }
+
+    /* Barra animada simple */
+    .loading-bar {
+      width: 100%;
+      height: 8px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .loading-bar::before {
+      content: "";
+      position: absolute;
+      top: 0; left: -50%;
+      height: 100%;
+      width: 50%;
+      background: linear-gradient(90deg, #6d00d7, #2abdf7);
+      animation: loadingMove 1.6s linear infinite;
+      border-radius: 10px;
+    }
+
+    @keyframes loadingMove {
+      0% {
+        left: -50%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+  </style>
 </head>
-<body>
-  <div class="loading-screen">
-    <img src="assets/images/logo_curanto_sin_fondo.png" alt="Logo" />
+<body class="inicio-google">
+  <div class="loading-card">
+    <img src="assets/images/logo_curanto_sin_fondo.png" alt="Logo Curanto" />
     <h2 id="tituloTransporte">Cargando...</h2>
+    <p class="subtitulo">Por favor, espera un momento</p>
+    <div class="loading-bar"></div>
   </div>
 
   <script>
-    const titulo = localStorage.getItem("transporteElegido") || "Cargando...";
+    const titulo = localStorage.getItem("transporteElegido") || "Transporte";
     const destino = localStorage.getItem("destinoFinal") || "index.html";
 
-    document.getElementById("tituloTransporte").textContent = titulo;
+    const tituloElem = document.getElementById("tituloTransporte");
+    tituloElem.textContent = `Cargando ${titulo}...`;
 
     setTimeout(() => {
       window.location.href = destino;
@@ -24,3 +135,4 @@
   </script>
 </body>
 </html>
+

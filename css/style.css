@@ -140,7 +140,7 @@ button:hover {
   border-radius: 12px;
   width: 100%;
   max-width: 450px;
-  color: black;
+  color: white;
   text-align: left;
   animation: zoomIn 0.6s ease-out;
 }
@@ -150,12 +150,14 @@ button:hover {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   color: #fff;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
 }
 
 .subtitulo, .recorridos {
   font-size: 1.2rem;
   margin: 0.3rem 0;
   color: #fff;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
 }
 
 .seccion-horarios {
@@ -167,6 +169,7 @@ button:hover {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
 
 
@@ -178,6 +181,7 @@ button:hover {
   color: #fff;
   margin-bottom: 6px;
   padding: 0 5px;
+  text-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 
 .etiqueta-lugar {
@@ -197,20 +201,24 @@ button:hover {
 }
 
 .item-horario {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(122, 67, 232, 0.85); /* Lila más sólido */
+  border: 1.5px solid rgba(122, 67, 232, 1);
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
-  color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 1.1rem;  /* un poco más grande */
+  font-weight: 600;
+  color: #f0e7ff;  /* blanco lila claro */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 8px rgba(122, 67, 232, 0.5);
   animation: fadeIn 0.6s ease;
 }
 
 .item-horario span {
-  font-weight: bold;
+  font-weight: 700;
+  color: #f0e7ff; /* también blanco claro */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -260,4 +268,74 @@ h2, h3, h4, p {
 .volver-inicio a:hover {
   background-color: #0511aa;
   transform: scale(1.03);
+}
+
+.inicio-google {
+  background-image: linear-gradient(90deg, rgb(202, 10, 202), rgb(115, 199, 233));
+  padding: 40px 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 850px;
+  background-color: #c694f6; /* Lila más fuerte */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.google-left {
+  flex: 1;
+  background-color: #bb86fc; /* Más violeta para contraste */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.google-left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.google-right {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ddbdfc; /* Lila claro (no blanco) */
+}
+
+.google-right h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #02199c;
+}
+
+.google-right p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+  .google-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .google-left {
+    display: none;
+  }
+
+  .google-right {
+    padding: 20px;
+  }
 }

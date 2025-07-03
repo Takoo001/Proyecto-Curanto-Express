@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elección</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elección de Transporte</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <div class="login-container">
-    <h2>¿Qué transporte deseas?</h2>
+<body class="inicio-google">
+  <div class="google-container">
 
-    <button id="btnTerrestre">Terrestre</button>
-    <button id="btnMaritimo" class="secondary">Marítimo</button>
+    <!-- Lado izquierdo con imagen -->
+    <div class="google-left">
+      <img src="assets/images/logo_curanto_sin_fondo.png" alt="Logo Curanto" />
+    </div>
+
+    <!-- Lado derecho con botones -->
+    <div class="google-right">
+      <h2>¿Qué transporte deseas?</h2>
+      <p>Selecciona una opción para continuar</p>
+
+      <button id="btnTerrestre">Transporte Terrestre</button>
+      <button id="btnMaritimo" class="secondary">Transporte Marítimo</button>
+
+      <p class="forgot-password">
+        <a href="./index.html">← Volver al inicio</a>
+      </p>
+    </div>
   </div>
 
   <script>
