@@ -30,8 +30,10 @@
 
   <script>
     document.getElementById("btnTerrestre").addEventListener("click", () => {
-      alert("Has elegido transporte terrestre.");
-    });
+      localStorage.setItem("transporteElegido", "Transporte Terrestre");
+      localStorage.setItem("destinoFinal", "localidad.html");
+      window.location.href = "localidad.html";
+     });
 
     document.getElementById("btnMaritimo").addEventListener("click", () => {
       localStorage.setItem("transporteElegido", "Transporte Marítimo");

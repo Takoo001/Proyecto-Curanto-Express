@@ -1,0 +1,22 @@
+{
+  "castro": {
+    "invierno": [
+      { "trayecto": "Quehui - Castro", "horario": "07:10 - 09:20" },
+      { "trayecto": "Chelín - Castro", "horario": "07:10 - 09:20" },
+      { "trayecto": "Castro - Quehui", "horario": "15:30 - 17:30" },
+      { "trayecto": "Castro - Chelín", "horario": "15:30 - 17:30" }
+    ],
+    "verano": [
+      { "trayecto": "Quehui - Castro", "horario": "07:10 - 09:20" },
+      { "trayecto": "Chelín - Castro", "horario": "07:10 - 09:20" },
+      { "trayecto": "Castro - Quehui", "horario": "16:00 - 18:00" },
+      { "trayecto": "Castro - Chelín", "horario": "16:00 - 18:00" }
+    ],
+    "feriados": [
+      { "trayecto": "Quehui - Castro", "horario": "13:00 - 15:00" },
+      { "trayecto": "Chelín - Castro", "horario": "13:00 - 15:00" },
+      { "trayecto": "Castro - Quehui", "horario": "16:00 - 18:00" },
+      { "trayecto": "Castro - Chelín", "horario": "16:00 - 18:00" }
+    ]
+  }
+}
